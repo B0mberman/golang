@@ -23,7 +23,6 @@ func main() {
 		for j := 0; j < elemsNumber; j++ {
 			fmt.Println("Введите число")
 			fmt.Scanf("%d", &number)
-			list = append(list, []int{0,0})
 			list[i][j] = number
 		}
 	}
