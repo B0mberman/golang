@@ -14,15 +14,15 @@ func main() {
 		list[i] = make([]int, linesNumber)
 	}
 
-	for i := range linesNumber {
-		for j := range linesNumber {
+	for i := 0; i < linesNumber; i++ {
+		for j := 0; j < linesNumber; j++ {
 			fmt.Println("Введите число")
 			fmt.Scanf("%d", &number)
 			list[i][j] = number
 		}
 	}
 
-	for i := range linesNumber{
+	for i := 0; i < linesNumber; i++ {
 		sum = sum + list[i][i]
 	}
 
